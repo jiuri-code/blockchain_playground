@@ -1,3 +1,4 @@
-[submodule "signature/ecdsa/sig_demo"]
-	path = signature/ecdsa/sig_demo
+
+[submodule "signature/threshold-signature-demo"]
+	path = signature/threshold-signature-demo
 	url = https://github.com/gitzhou/threshold-signature-demo.git

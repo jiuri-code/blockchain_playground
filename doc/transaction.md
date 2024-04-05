@@ -12,7 +12,7 @@ bitcoin transaction的思考
 A有10个bitcoin，要转7个bitcoin给B；那么A可以发起一次交易，其中 `tx_in[]`中为10个bitcoin输入，`tx_out[]`包含两个输出，分别是3个bitcoin输出到A的地址和7个bitcoin输出到B的地址；（在不考虑手续费的前提下）
 
 ## 2、协议拆分及详解
-给出一个bitcoint交易json反序列化的例子：
+给出一个bitcoint交易反序列化json的例子：
 ```
 {
     "version": 1,
@@ -75,7 +75,7 @@ A有10个bitcoin，要转7个bitcoin给B；那么A可以发起一次交易，其
 - 
 
 #### 2.3、脚本运算
-`scriptPubkey`中`OP_DUP`和`OP_HASH160`均属于操作码，对用于特定字节，可参考[脚本操作码](https://en.bitcoin.it/wiki/Script#Opcodes)
+`scriptPubkey`中`OP_DUP`和`OP_HASH160`均属于操作码，对应于特定字节，可参考[脚本操作码](https://en.bitcoin.it/wiki/Script#Opcodes)
 
 bitcoin的脚本运算是在栈上执行的，运算的过程在不同的网络节点进行（PC）等；先执行解锁脚本，然后执行锁定脚本：  
 

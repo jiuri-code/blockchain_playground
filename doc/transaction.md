@@ -98,6 +98,6 @@ bitcoin的脚本运算是在栈上执行的，运算的过程在不同的网络�
 - 定制化脚本
   - 将交易的输入、输出、锁定时间等信息推入堆栈，为定制化脚本提供更多可能
 
-BSV智能合约示例：
+BSV智能合约示例：  
 [深入学习 BSV 脚本之 OP_PUSH_TX(1)](https://zhuanlan.zhihu.com/p/666696101)  
 [深入学习 BSV 脚本之 OP_PUSH_TX(2)](https://zhuanlan.zhihu.com/p/666696895)

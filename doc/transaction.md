@@ -69,10 +69,10 @@ A有10个bitcoin，要转7个bitcoin给B；那么A可以发起一次交易，其
 ##### 2.2.2、有状态的 UTXO
 - 通常指锁定脚本中携带状态数据以及状态流转条件
   - 参考 [有状态的 UTXO 和 OP_PUSH_TX 的技术原理](https://aaron67.cc/2022/03/06/bsv-stateful-utxo-and-op-push-tx/) `“有状态”的 UTXO`章节
+- 状态流转条件会在每次交易过程中强制转移
 - 通常是使用`OP_RETURN`和`OP_DROP`组合使用的方式
   - `OP_RETURN`：用于向区块链添加数据而不影响交易的有效性，常用于存储元数据，放置于账本中
   - `OP_DROP`：用于从栈中弹出并丢弃一个元素，用于简化脚本操作
-- 
 
 #### 2.3、脚本运算
 `scriptPubkey`中`OP_DUP`和`OP_HASH160`均属于操作码，对应于特定字节，可参考[脚本操作码](https://en.bitcoin.it/wiki/Script#Opcodes)
